@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        debug
+    </title>
+</head>
+<body>
+    <input type="text" value="" placeholder="add your task" class="form-add" id="box_to_do">
+    
+</body>
+<script>
+    var input= document.querySelector('#box_to_do');
+    input.addEventListener('keypress', function(event)
+    {
+        if (event.keyCode === 13 || event.which === 13){
+            // console.log('you pressed enter');
+            boxToDo();
+            
+        }
+
+    });
+
+    function boxToDo(){
+      if(input.value){
+        console.log(input.value);
+      }
+        
+        
+    };
+    
+</script>
+</html>
